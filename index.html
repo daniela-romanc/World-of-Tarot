@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Enter the World of Tarot: explore the cards, follow the clues, and play the number and suit games."
+    />
+    <meta name="theme-color" content="#10090d" />
+    <title>World Of Tarot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Cinzel:wght@400;500&family=Cormorant+Garamond:wght@500;600;700&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="assets/tarot/meanings.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to the tarot games</a>
+    <div class="site-shell">
+    <div class="screen-smoke" aria-hidden="true"></div>
+    <header class="site-header">
+      <div class="site-topline">
+        <span>WORLD OF TAROT &nbsp; // &nbsp; SIGNAL DETECTED</span>
+        <span class="site-updates"><i aria-hidden="true"></i> THE DIMENSION IS OPEN</span>
+      </div>
+      <div class="header-left">
+        <div class="nav-dropdown">
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+            <span>FIND YOURSELF</span><span class="menu-chevron" aria-hidden="true">⌄</span>
+          </button>
+          <nav class="main-nav" id="site-menu" aria-label="Main navigation" hidden>
+            <a href="#home"><span>01</span> Home <b>↗</b></a>
+            <a href="#quick-read"><span>02</span> Quick Draw <b>↗</b></a>
+            <a href="#tarot-elements"><span>03</span> Tarot &amp; The Elements <b>↗</b></a>
+            <a href="#learn"><span>04</span> Equations &amp; Examples <b>↗</b></a>
+            <a href="#games"><span>05</span> Suits &amp; Numbers Game <b>↗</b></a>
+          </nav>
+        </div>
+        <a class="brand" href="#home" aria-label="World Of Tarot home">
+          <span class="brand-type"><strong>World Of Tarot</strong></span>
+        </a>
+      </div>
+      <div class="site-note"><span>WHO IS WATCHING?</span><strong>STAY CURIOUS</strong></div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="home" data-home-view>
+        <span class="ambient-star ambient-star-one" aria-hidden="true">✦</span>
+        <span class="ambient-star ambient-star-two" aria-hidden="true">✧</span>
+        <span class="ambient-star ambient-star-three" aria-hidden="true">✦</span>
+        <span class="ambient-star ambient-star-four" aria-hidden="true">✧</span>
+        <span class="ambient-star ambient-star-five" aria-hidden="true">✦</span>
+        <div class="hero-stage">
+          <a class="cube-link number-cube" href="#number-game" aria-label="Play the numbers game">
+            <span class="cube-visual" aria-hidden="true">
+              <span class="cube-face">
+                <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+              </span>
+            </span>
+            <span class="cube-caption">NUMBERS GAME <b>↘</b></span>
+          </a>
+
+          <div class="hero-copy">
+            <p class="eyebrow hero-glitch" data-text="Peek Into Another Dimension">Peek Into Another Dimension</p>
+            <h1 class="title-drip" data-text="World Of Tarot" aria-label="World Of Tarot">
+              <span>World Of Tarot</span><i aria-hidden="true"></i>
+            </h1>
+            <h2 class="hero-question">Do you want to know...?</h2>
+            <p class="hero-description">
+              Who’s that watching us?<br />
+              How do time &amp; the subconscious collide?
+            </p>
+            <a class="button button-dark hero-button" href="#watching">Become a Watcher <span aria-hidden="true">↗</span></a>
+            <a class="read-all" href="#quick-read">Quick Tarot Read</a>
+            <svg class="pink-leaf" viewBox="0 0 180 150" role="img" aria-label="A light pink cannabis leaf drifting in the breeze">
+              <g class="pink-leaf-drift">
+                <path class="pink-leaf-blade" d="M90 119C84 99 82 73 90 19C98 73 96 99 90 119Z" />
+                <path class="pink-leaf-blade" d="M86 111C70 99 53 81 30 39C68 61 85 81 91 103Z" />
+                <path class="pink-leaf-blade" d="M84 118C64 116 40 109 4 83C48 86 73 95 89 108Z" />
+                <path class="pink-leaf-blade" d="M87 119C69 130 45 138 4 137C42 116 68 111 88 112Z" />
+                <path class="pink-leaf-blade" d="M94 111C110 99 127 81 150 39C112 61 95 81 89 103Z" />
+                <path class="pink-leaf-blade" d="M96 118C116 116 140 109 176 83C132 86 107 95 91 108Z" />
+                <path class="pink-leaf-blade" d="M93 119C111 130 135 138 176 137C138 116 112 111 92 112Z" />
+                <path class="pink-leaf-vein" d="M90 119 90 23m1 89L34 44m56 70L10 84m76 32L11 135m68-24 57-67m-52 72 77-32m-80 31 77 20" />
+                <path class="pink-leaf-stem" d="M90 114C87 125 82 134 76 145" />
+              </g>
+            </svg>
+            <a class="secret-date-link" href="#secret-date-page">zaaaaa.... <span aria-hidden="true">♡</span></a>
+          </div>
+
+          <a class="cube-link suits-cube" href="#card-game" aria-label="Play the suits game">
+            <span class="cube-visual" aria-hidden="true">
+              <span class="cube-face">
+                <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+              </span>
+            </span>
+            <span class="cube-caption">SUITS GAME <b>↙</b></span>
+          </a>
+        </div>
+        <span class="shooting-star" aria-hidden="true"></span>
+      </section>
+
+      <section class="secret-date-page" id="secret-date-page" data-page-view hidden aria-labelledby="secret-date-title">
+        <div class="secret-date-shell">
+          <a class="secret-back-link" href="#home">← Back to our little world</a>
+          <header class="secret-date-header">
+            <p class="eyebrow">Where are we?</p>
+            <p>To remeber magic is real.</p>
+          </header>
+          <section class="record-player" aria-label="Now playing Get It Shawty by Lloyd">
+            <div class="record-illustration">
+              <button class="record-vinyl" id="record-play-toggle" type="button" aria-label="Pause Get It Shawty" aria-pressed="true">
+                <span aria-hidden="true"></span>
+              </button>
+              <h2 class="record-title" id="secret-date-title">MEMORY<br />DIMENSION</h2>
+              <div class="record-arm" aria-hidden="true"></div>
+            </div>
+            <audio class="song-preview-player" id="date-song-preview" preload="none" aria-label="Get It Shawty by Lloyd">
+              <source src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/aa/23/ab/aa23ab14-a972-a033-eb0a-9dd5a9c55b8a/mzaf_5699132810103610310.plus.aac.p.m4a" />
+            </audio>
+            <p class="song-preview-status visually-hidden" id="song-preview-status" role="status" aria-live="polite"></p>
+          </section>
+          <div class="scrapbook-intro">
+            <span aria-hidden="true">✧</span>
+            <p>Our magical memories</p>
+            <span aria-hidden="true">✧</span>
+          </div>
+          <p class="memory-comments-note">Comments are saved in this browser only; they aren't shared with other visitors.</p>
+          <div class="date-polaroid-wall" aria-label="One photo and five blank Polaroids">
+            <figure class="date-polaroid">
+              <img class="polaroid-photo" src="assets/rishi-site.png" alt="User-provided image added to a scrapbook Polaroid" loading="lazy" />
+              <figcaption>What will Rishi think about this site?</figcaption>
+              <form class="memory-comment-form" data-polaroid-comment="0">
+                <label for="memory-comment-0">Thoughts?</label>
+                <textarea id="memory-comment-0" name="comment" rows="2" maxlength="500" required placeholder="Thoughts?"></textarea>
+                <button class="memory-comment-submit" type="submit">Post</button>
+                <p class="memory-comment-status" role="status" aria-live="polite"></p>
+                <div class="memory-comment-list" aria-live="polite"></div>
+              </form>
+            </figure>
+            <figure class="date-polaroid" aria-label="Blank Polaroid photo placeholder">
+              <div class="polaroid-photo-blank" aria-hidden="true"></div><figcaption aria-hidden="true"></figcaption>
+              <form class="memory-comment-form" data-polaroid-comment="1">
+                <label for="memory-comment-1">Thoughts?</label>
+                <textarea id="memory-comment-1" name="comment" rows="2" maxlength="500" required placeholder="Thoughts?"></textarea>
+                <button class="memory-comment-submit" type="submit">Post</button>
+                <p class="memory-comment-status" role="status" aria-live="polite"></p>
+                <div class="memory-comment-list" aria-live="polite"></div>
+              </form>
+            </figure>
+            <figure class="date-polaroid" aria-label="Blank Polaroid photo placeholder">
+              <div class="polaroid-photo-blank" aria-hidden="true"></div><figcaption aria-hidden="true"></figcaption>
+              <form class="memory-comment-form" data-polaroid-comment="2">
+                <label for="memory-comment-2">Thoughts?</label>
+                <textarea id="memory-comment-2" name="comment" rows="2" maxlength="500" required placeholder="Thoughts?"></textarea>
+                <button class="memory-comment-submit" type="submit">Post</button>
+                <p class="memory-comment-status" role="status" aria-live="polite"></p>
+                <div class="memory-comment-list" aria-live="polite"></div>
+              </form>
+            </figure>
+            <figure class="date-polaroid" aria-label="Blank Polaroid photo placeholder">
+              <div class="polaroid-photo-blank" aria-hidden="true"></div><figcaption aria-hidden="true"></figcaption>
+              <form class="memory-comment-form" data-polaroid-comment="3">
+                <label for="memory-comment-3">Thoughts?</label>
+                <textarea id="memory-comment-3" name="comment" rows="2" maxlength="500" required placeholder="Thoughts?"></textarea>
+                <button class="memory-comment-submit" type="submit">Post</button>
+                <p class="memory-comment-status" role="status" aria-live="polite"></p>
+                <div class="memory-comment-list" aria-live="polite"></div>
+              </form>
+            </figure>
+            <figure class="date-polaroid" aria-label="Blank Polaroid photo placeholder">
+              <div class="polaroid-photo-blank" aria-hidden="true"></div><figcaption aria-hidden="true"></figcaption>
+              <form class="memory-comment-form" data-polaroid-comment="4">
+                <label for="memory-comment-4">Thoughts?</label>
+                <textarea id="memory-comment-4" name="comment" rows="2" maxlength="500" required placeholder="Thoughts?"></textarea>
+                <button class="memory-comment-submit" type="submit">Post</button>
+                <p class="memory-comment-status" role="status" aria-live="polite"></p>
+                <div class="memory-comment-list" aria-live="polite"></div>
+              </form>
+            </figure>
+            <figure class="date-polaroid" aria-label="Blank Polaroid photo placeholder">
+              <div class="polaroid-photo-blank" aria-hidden="true"></div><figcaption aria-hidden="true"></figcaption>
+              <form class="memory-comment-form" data-polaroid-comment="5">
+                <label for="memory-comment-5">Thoughts?</label>
+                <textarea id="memory-comment-5" name="comment" rows="2" maxlength="500" required placeholder="Thoughts?"></textarea>
+                <button class="memory-comment-submit" type="submit">Post</button>
+                <p class="memory-comment-status" role="status" aria-live="polite"></p>
+                <div class="memory-comment-list" aria-live="polite"></div>
+              </form>
+            </figure>
+          </div>
+          <p class="scrapbook-signoff">wander, always <span aria-hidden="true">♡</span></p>
+        </div>
+      </section>
+
+      <section class="watching-section section-wrap" id="watching" data-home-view>
+        <div class="section-kicker">A CLOSER LOOK</div>
+        <h2 class="watching-title">Watcher</h2>
+        <div class="watching-content">
+          <svg class="detective-illustration" viewBox="0 0 280 300" role="img" aria-label="A cartoon detective smoking a cigar and blowing animated smoke">
+            <g class="detective-smoke" aria-hidden="true">
+              <path class="smoke-wisp smoke-wisp-one" d="M206 149c-20-17 16-23-1-42s18-23 4-41" />
+              <path class="smoke-wisp smoke-wisp-two" d="M218 150c17-17-12-27 4-42s-8-23 8-39" />
+              <path class="smoke-wisp smoke-wisp-three" d="M198 146c-11-12 8-18-3-29s10-18 2-28" />
+            </g>
+            <path class="detective-coat" d="M48 291 62 202Q66 184 91 177h91q25 8 30 27l18 87Z" />
+            <path class="detective-lapel" d="m91 177 49 28 42-28-19 73-25-28-27 29Z" />
+            <path class="detective-shirt" d="m115 177 25 28 22-28-10 72h-27Z" />
+            <path class="detective-tie" d="m133 207 8 0 8 48-12 14-13-14Z" />
+            <path class="detective-neck" d="M119 151h43v35q-20 18-43 0Z" />
+            <ellipse class="detective-face" cx="141" cy="111" rx="44" ry="52" />
+            <path class="detective-hair" d="M100 104q0-51 42-51 43 0 43 51l-13-14-6 10-12-13-13 12-14-12-14 12-10-11Z" />
+            <path class="detective-hat" d="M93 72q2-31 48-32 44 2 47 32l18 8q-1 8-18 8H83q-17 0-19-8Z" />
+            <path class="detective-hat-band" d="M97 71q43 8 84 0" />
+            <path class="detective-brow" d="m115 105 15-3m23 0 15 3" />
+            <path class="detective-eye" d="m118 114 9 1m27-1 9 1" />
+            <path class="detective-nose" d="m140 111-4 18 9 2" />
+            <path class="detective-mustache" d="M131 139q9-8 15 0 8-7 16 0-9 5-15 2-8 4-16-2Z" />
+            <path class="detective-cigar" d="m163 143 37-3" />
+            <path class="detective-cigar-tip" d="m196 140 6-.5" />
+            <circle class="detective-ember" cx="202" cy="139.5" r="2" />
+            <path class="detective-pocket" d="M176 220h23l-5 18h-22" />
+            <path class="detective-hand" d="M188 226q8-11 13-7l10 9q4 5-2 9l-12-6" />
+          </svg>
+          <div class="watching-copy">
+            <p>A watcher is someone who doesn’t need eyes to see.<br />Why else would we have our senses?<br />To use <a href="#tarot-elements">tarot and the elements</a>. duh! We are nothing but energy and matter moving through time, a concept where all we know is our past; we will never see the full picture so long as we reside here. Not until full completion of the life cycle on earth (ironically, the Tarot Card - The World, signifies completion…).<br />Tarot can make predictions based on past and current events. It also reflects energy. It’s important to know every person is different. Some are protected, some are not. This means some people are harder to read. Or someone’s spiritual aura could be stronger, and only their energy is appearing. You can always ask for a clarifying card.<br />A tarot reader can access untapped energy, makeing them an observer.</p>
+            <p>Go on, test tarot.</p>
+            <div class="watching-tarot-explainer">
+              <h3>What is Tarot?</h3>
+              <p>Tarot reflects the current state of being. Like the stock market, you can predict certain trends, but it is not all guaranteed. You need to use your intuition and knowledge of the cards to get a proper reading. You cannot go to every person to access your essence. The cards show you data; interpret it in order to follow or create a proper path for your queries and projects.</p>
+              <p>Remember, it's all about energy. Sometimes the tarot cards will be bad and not want to say anything or help you. It is important to respect the balance of give &amp; take, so walk away. Rest.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="astrology-section section-wrap" id="tarot-elements" aria-labelledby="astrology-title" data-page-view hidden>
+        <h2 class="astrology-title" id="astrology-title">Tarot &amp; The Elements</h2>
+        <div class="astrology-intro">
+          <div class="astrology-copy">
+            <h3>Why does it matter?</h3>
+            <p>Like many religions have stated, we’re all <strong>interconnected</strong>.<br />
+            Even without humans, the world would remain in its natural order. As humans, we are merely additions to all the magic that’s been flowing around us already. Not us specifically, but the elements in nature. The earth has been alchemized into humans! Everything needs a recipe to cook. So, now you know… If we want to know about our reflections, we have to see our creators. We have seasons, elements, numbers, suits, astrology, and art to make sense of tarot.<br />
+            All the things that make us, make tarot. That’s why it matters to know each component we’re studying.</p>
+          </div>
+          <figure class="wheel-of-life-figure">
+            <img src="assets/wheel-of-life-color.jpg" alt="A colorful Buddhist Bhavachakra, the Wheel of Life, showing cycles of existence and realms of rebirth." loading="lazy" />
+          </figure>
+        </div>
+        <div class="astrology-patterns">
+          <details class="learning-set" open>
+            <summary id="seasons-title">The 4 seasons</summary>
+            <p class="card-section-intro">You're born in a specific season under the stars aligned with your zodiac.</p>
+            <div class="season-grid" id="season-cards"></div>
+          </details>
+          <details class="learning-set" open>
+            <summary id="zodiac-title">The 12 zodiac signs</summary>
+            <div class="zodiac-grid" id="zodiac-cards"></div>
+          </details>
+          <details class="learning-set" open>
+            <summary id="tarot-numbers-title">The Numbers</summary>
+            <p class="card-section-intro">Tap a number to explore its significance in the Major Arcana and its zodiac correspondence.</p>
+            <div class="number-card-grid" id="tarot-numbers"></div>
+          </details>
+          <details class="learning-set" open>
+            <summary id="tarot-elements-title">Elements</summary>
+            <div class="component-grid" id="tarot-elements-cards"></div>
+          </details>
+          <details class="learning-set" open>
+            <summary id="suit-order-title">Order of Suits</summary>
+            <div class="component-grid" id="tarot-suit-order"></div>
+          </details>
+        </div>
+      </section>
+
+      <section class="intro-section section-wrap" id="tarot-care" data-home-view>
+        <h2 class="tarot-care-title">Tarot Care</h2>
+        <div class="intro-content">
+          <figure class="magician-card-figure">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/62/Pictorial_Key_to_the_Tarot_01_The_Magician.jpg"
+              alt="The Magician tarot card, number I, illustrated by Pamela Colman Smith."
+              loading="lazy"
+            />
+          </figure>
+          <div class="intro-text">
+            <p class="perspective-note">Like the Magician, we'll use our spiritual power to bring intention into reality.</p>
+            <p>Tarot is a form of divination you should be using for any occasion regarding your life; work, love, confusion, clarity.</p>
+            <p>Tarot is a tool, we all must use it appropriately.</p>
+            <p>Before a reading, cleanse your cards with sage spray or incense. Music is optional but chanting an intention is a must.</p>
+            <p>If you have magic oil, use it. Better yet, use it every time you read tarot cards.</p>
+            <p>You may get tired, so stay hydrated. Since you are accessing energy, make sure to relax afterward.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="dos-donts-section section-wrap" id="dos-and-donts" data-home-view aria-labelledby="dos-donts-title">
+        <h2 class="tarot-care-title" id="dos-donts-title">Do's &amp; Don'ts</h2>
+        <div class="dos-donts-layout">
+          <details class="care-list" open>
+            <summary>Do's</summary>
+            <ul>
+              <li>Cleanse frequently.</li>
+              <li>Keep them sealed so you don't lose individual cards.</li>
+              <li>Trust your intuition.</li>
+              <li>Ask for permission to read someone.</li>
+              <li>Keep a journal. Some readings may take time to make sense. Keep track of what's pressing in your subconscious.</li>
+            </ul>
+          </details>
+          <div class="pentagram-seal">
+            <a class="pentagram-image-link" href="https://commons.wikimedia.org/wiki/File:Golden_Dawn_Pentagram.svg" target="_blank" rel="noopener noreferrer" aria-label="View the Golden Dawn pentagram source on Wikimedia Commons">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Golden_Dawn_Pentagram.svg" alt="Golden Dawn pentagram representing the five elements" loading="lazy" />
+            </a>
+            <a class="pentagram-image-credit" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">RootOfAllLight · CC BY-SA 4.0</a>
+          </div>
+          <details class="care-list" open>
+            <summary>Don'ts</summary>
+            <ul>
+              <li>Let strangers touch your deck. Energy is sacred.</li>
+              <li>Treat them carelessly.</li>
+              <li>Don't ask the same question multiple times.</li>
+              <li>Don't believe that fate is sealed by the cards.</li>
+              <li>Don't force the cards to give you answers.</li>
+              <li>Don't do a reading when you're not in a good mental state.</li>
+            </ul>
+          </details>
+        </div>
+      </section>
+
+      <section class="quick-read-section section-wrap" id="quick-read" data-page-view hidden>
+        <div class="section-kicker">TAROT READ</div>
+        <div class="quick-read-heading">
+          <h2>Tarot Read</h2>
+          <p>Type in 1 of the 78 cards that found you.</p>
+        </div>
+        <form class="quick-read-form" id="quick-read-form">
+          <label for="quick-read-card">Enter Card</label>
+          <div class="quick-read-controls">
+            <div class="quick-read-input-wrap">
+              <input id="quick-read-card" name="card" type="text" placeholder="Start typing a card name" autocomplete="off" required aria-describedby="quick-read-help quick-read-feedback" aria-controls="tarot-card-list" aria-autocomplete="list" />
+              <ul class="tarot-card-suggestions" id="tarot-card-list" role="listbox" aria-label="Matching tarot cards" hidden></ul>
+            </div>
+            <button class="button button-dark quick-read-card-button" type="submit" aria-label="Read card">
+              <span class="card-button-mark" aria-hidden="true">✦</span>
+              <span>READ</span>
+              <span>Card</span>
+              <span class="card-button-number" aria-hidden="true">78</span>
+            </button>
+          </div>
+          <p class="quick-read-help" id="quick-read-help">Type in 1 of the 78 cards that found you.</p>
+          <p class="quick-read-feedback" id="quick-read-feedback" role="status" aria-live="polite"></p>
+        </form>
+        <article class="quick-read-result" id="quick-read-result" aria-live="polite" hidden>
+          <div class="quick-read-card-heading">
+            <p class="eyebrow">YOUR CARD</p>
+            <h3 id="quick-read-title"></h3>
+          </div>
+          <section class="life-reading-card general-reading-card" aria-live="polite">
+            <p class="life-reading-area">General Reading</p>
+            <h4 id="reading-card-title"></h4>
+            <div class="reading-orientation" role="group" aria-label="Choose card orientation">
+              <button type="button" class="orientation-button active" data-orientation="0" aria-pressed="true">Upright</button>
+              <button type="button" class="orientation-button" data-orientation="1" aria-pressed="false">Reversed</button>
+            </div>
+            <p class="life-reading-meaning" id="reading-card-meaning"></p>
+            <div class="card-reading-meta">
+              <p><strong>Yes / No</strong><span id="reading-card-answer"></span></p>
+              <p><strong>Zodiac</strong><span id="reading-card-zodiac"></span></p>
+            </div>
+            <p class="life-reading-note">Traditional card text from A. E. Waite. Yes/no and zodiac correspondences are interpretive traditions, not fixed outcomes.</p>
+          </section>
+          <h4 class="context-readings-title">Explore this card by area</h4>
+          <div class="reading-areas" id="reading-areas" role="group" aria-label="Flip a card for a life area"></div>
+        </article>
+      </section>
+
+      <section class="method-section" id="learn" data-page-view hidden>
+        <div class="section-wrap">
+          <div class="method-heading">
+            <div>
+              <h2>Everything is<br /><em>MATH!</em></h2>
+            </div>
+            <p>A reading emerges from a card’s number, suit, and imagery, interpreted in the context of your question.</p>
+          </div>
+          <div class="equation" aria-label="Ten plus the suit of cups plus the Ten of Cups illustration suggests a reading">
+            <div class="equation-part">
+              <span class="equation-icon equation-number"><span>10</span><span class="number-sigil">☉</span></span>
+              <span>NUMBER</span>
+            </div>
+            <span class="equation-sign">+</span>
+            <div class="equation-part">
+              <span class="equation-icon equation-cup" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none">
+                  <path d="M14 13h20l-3 15a7 7 0 0 1-7 6 7 7 0 0 1-7-6l-3-15Z" />
+                  <path d="M14 17H9a5 5 0 0 0 5 7m20-7h5a5 5 0 0 1-5 7M24 34v6m-8 0h16M24 6v3m-7 1 2 3m12-3-2 3" />
+                </svg>
+              </span>
+              <span>SUIT</span>
+            </div>
+            <span class="equation-sign">+</span>
+            <div class="equation-part equation-art-part">
+              <span class="equation-icon equation-art">
+                <img src="assets/tarot/ten-of-cups.jpg" alt="" />
+              </span>
+              <span>ART</span>
+            </div>
+            <span class="equation-sign equals">=</span>
+            <div class="equation-part equation-result">
+              <span class="equation-icon equation-eye" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none">
+                  <path d="M5 24s7-11 19-11 19 11 19 11-7 11-19 11S5 24 5 24Z" />
+                  <circle cx="24" cy="24" r="5" />
+                  <path d="M24 4v4m0 32v4M4 24H1m46 0h-3M10 10l3 3m22 22 3 3m0-28-3 3M13 35l-3 3" />
+                </svg>
+              </span>
+              <span>READING</span>
+            </div>
+          </div>
+          <div class="example-card">
+            <figure class="example-art">
+              <img src="assets/tarot/ten-of-cups.jpg" alt="The Ten of Cups tarot card: a family celebrates beneath a rainbow of ten cups." loading="lazy" />
+              <figcaption>Pamela Colman Smith · 1909</figcaption>
+            </figure>
+            <div class="example-copy">
+              <p class="eyebrow">LET’S BREAK IT DOWN</p>
+              <h3>Ten of Cups</h3>
+              <ol class="breakdown-list">
+                <li><span>+</span><div><strong>10 = completion</strong><p>A cycle comes full circle. Completion makes room for what’s next.</p></div></li>
+                <li><span>+</span><div><strong>Cups = Feelings</strong><p>Relationships, intuition, and the connections we care for.</p></div></li>
+                <li><span>=</span><div><strong>Art</strong><p>The family, rainbow, and ten cups suggest shared joy and a sense of belonging.</p></div></li>
+              </ol>
+              <p class="match-equation"><span aria-hidden="true">=</span> 10 + Cups + Art = emotional fulfillment</p>
+            </div>
+          </div>
+          <p class="method-footnote">The image can vary between decks. Your context and intuition matter, too.</p>
+          <section class="three-card-practice" aria-labelledby="three-card-title">
+            <div class="three-card-heading">
+              <p class="eyebrow">YOUR TURN</p>
+              <h3 id="three-card-title">Build a Three-Card Equation</h3>
+              <p>Bring a question, choose three cards, and write your interpretation before revealing the card meanings.</p>
+            </div>
+            <form id="three-card-form" class="three-card-form">
+              <label class="three-card-question" for="three-card-question">What question are you exploring?
+                <textarea id="three-card-question" name="question" rows="2" placeholder="For example: What should I understand about this new opportunity?" required></textarea>
+              </label>
+              <div class="three-card-picks" role="group" aria-label="Choose three tarot cards">
+                <label class="three-card-pick" for="three-card-past">
+                  <span>Past · What led here</span>
+                  <select id="three-card-past" name="past" required><option value="">Choose a card</option></select>
+                  <img class="three-card-preview" alt="" hidden />
+                </label>
+                <span class="three-card-operator" aria-hidden="true">+</span>
+                <label class="three-card-pick" for="three-card-present">
+                  <span>Present · Where you are</span>
+                  <select id="three-card-present" name="present" required><option value="">Choose a card</option></select>
+                  <img class="three-card-preview" alt="" hidden />
+                </label>
+                <span class="three-card-operator" aria-hidden="true">+</span>
+                <label class="three-card-pick" for="three-card-next">
+                  <span>Next · A path forward</span>
+                  <select id="three-card-next" name="next" required><option value="">Choose a card</option></select>
+                  <img class="three-card-preview" alt="" hidden />
+                </label>
+              </div>
+              <p class="three-card-equation" aria-label="Past card plus present card plus next step equals your reading">
+                <span>Past</span><b aria-hidden="true">+</b><span>Present</span><b aria-hidden="true">+</b><span>Next step</span><b aria-hidden="true">=</b><strong>Your reading</strong>
+              </p>
+              <label class="three-card-guess" for="three-card-guess">What do you think these cards mean together?
+                <textarea id="three-card-guess" name="guess" rows="3" placeholder="Type your guess before revealing the meanings." required></textarea>
+              </label>
+              <button class="button button-dark three-card-submit" type="submit">Reveal the Reading</button>
+              <p class="three-card-feedback" id="three-card-feedback" role="status" aria-live="polite"></p>
+            </form>
+            <section class="three-card-result" id="three-card-result" aria-live="polite" hidden>
+              <h4>Your three-card reading</h4>
+              <p class="three-card-result-question"><strong>Your question:</strong> <span id="three-card-result-question-text"></span></p>
+              <blockquote class="three-card-result-guess"><strong>Your interpretation:</strong> <span id="three-card-result-guess"></span></blockquote>
+              <div class="three-card-meanings" id="three-card-meanings"></div>
+              <p class="three-card-synthesis" id="three-card-synthesis"></p>
+              <p class="three-card-note">Use this as a prompt for reflection, not a fixed prediction. Your own context and intuition matter.</p>
+            </section>
+          </section>
+        </div>
+      </section>
+
+      <div class="games-view" id="games" data-page-view hidden>
+        <section class="game-section section-wrap" id="card-game">
+        <div class="game-heading">
+          <div>
+            <h2>Who can read who better?</h2>
+          </div>
+        </div>
+        <div class="game-panel">
+          <div class="game-topline">
+            <div class="game-label"><span class="game-dot"></span> CARD MEANING GAME</div>
+            <div class="score-pill" aria-live="polite">Score <strong id="card-score">0</strong><span class="score-divider">/</span><span id="card-total">0</span></div>
+          </div>
+          <h3 class="category-title">Choose a section to practice</h3>
+          <div class="category-tabs" role="group" aria-label="Choose a tarot section">
+            <button class="category-tab active" data-category="major" aria-pressed="true">Major Arcana <span>0–21</span></button>
+            <button class="category-tab" data-category="all" aria-pressed="false">All Cards <span>78</span></button>
+            <button class="category-tab" data-category="cups" aria-pressed="false">Cups <span>♡</span></button>
+            <button class="category-tab" data-category="wands" aria-pressed="false">Wands <span>♧</span></button>
+            <button class="category-tab" data-category="swords" aria-pressed="false">Swords <span>⚔</span></button>
+            <button class="category-tab" data-category="pentacles" aria-pressed="false">Pentacles <span>✧</span></button>
+          </div>
+          <div class="quiz-content">
+            <div class="quiz-card-wrap">
+              <div class="quiz-card" id="quiz-card" aria-label="Your tarot card">
+                <div class="quiz-card-inner">
+                  <img class="quiz-card-art" id="quiz-card-art" alt="" />
+                  <span class="quiz-number" id="quiz-number"></span>
+                  <div class="quiz-symbol" id="quiz-symbol" aria-hidden="true"></div>
+                  <span class="quiz-card-name" id="quiz-card-name"></span>
+                  <span class="quiz-card-ornament" aria-hidden="true">✦</span>
+                </div>
+              </div>
+              <p class="card-hint" id="card-hint">Read the card and choose the meaning that fits.</p>
+            </div>
+            <div class="quiz-question">
+              <p class="eyebrow" id="quiz-category-label">MAJOR ARCANA</p>
+              <h3 id="quiz-question">What might this card be inviting you to notice?</h3>
+              <div class="answer-options" id="answer-options" role="group" aria-label="Choose a card meaning"></div>
+              <div class="answer-feedback" id="answer-feedback" aria-live="polite"></div>
+              <button class="button button-dark next-question" id="next-card" type="button" disabled>Next card <span aria-hidden="true">→</span></button>
+            </div>
+          </div>
+        </div>
+        </section>
+
+        <section class="number-section" id="number-game">
+        <div class="number-wrap">
+          <div class="number-intro">
+          <div class="section-kicker light-kicker">05 <span>·</span> THE STAR OBSERVATORY</div>
+            <h2>Numbers have<br /><em>a rhythm.</em></h2>
+            <p>From a fresh beginning to a cycle complete, numbers add another layer to the story. Can you remember what each one suggests?</p>
+            <div class="number-decor" aria-hidden="true"><span>1</span><span>·</span><span>2</span><span>·</span><span>3</span><span>·</span><span>∞</span></div>
+          </div>
+          <div class="number-game">
+            <div class="number-game-top">
+              <span class="game-label"><span class="game-dot"></span> NUMBER MEANING GAME</span>
+              <div class="score-pill score-pill-light" aria-live="polite">Score <strong id="number-score">0</strong><span class="score-divider">/</span><span id="number-total">0</span></div>
+            </div>
+            <div class="number-question-card">
+              <span class="number-question-label">WHAT DOES THIS NUMBER SUGGEST?</span>
+              <span class="number-display" id="number-display">—</span>
+              <span class="number-orbit" aria-hidden="true">✧</span>
+            </div>
+            <div class="number-options" id="number-options" role="group" aria-label="Choose a number meaning"></div>
+            <div class="answer-feedback number-feedback" id="number-feedback" aria-live="polite"></div>
+            <button class="button button-light next-number" id="next-number" type="button" disabled>Try another number <span aria-hidden="true">→</span></button>
+          </div>
+        </div>
+        </section>
+      </div>
+
+      <section class="closing-section section-wrap" id="closing-section" data-page-view hidden>
+        <span class="closing-star" aria-hidden="true">✳</span>
+        <p class="eyebrow">A LITTLE NOTE BEFORE YOU GO</p>
+        <h2>You don’t need to know<br />everything to <em>begin.</em></h2>
+        <p>Take what resonates. Leave room for your own interpretation. The best reading starts with a good question.</p>
+        <a class="button button-dark" href="#card-game">Keep exploring <span aria-hidden="true">↑</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#home"><span>World Of <strong>Tarot</strong></span></a>
+      <p>Must we know everything?</p>
+      <a href="#home">Back to top ↑</a>
+    </footer>
+    </div>
+  </body>
+</html>
